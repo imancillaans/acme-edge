@@ -1,0 +1,96 @@
+/* Quote Block Styles */
+
+.quote {
+  padding: 40px 20px;
+  margin: 40px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-text {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 24px;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+/* Add quotation marks */
+.quote-text::before {
+  content: '"';
+  font-size: 60px;
+  color: #e0e0e0;
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  font-family: Georgia, serif;
+}
+
+.quote-text::after {
+  content: '"';
+  font-size: 60px;
+  color: #e0e0e0;
+  font-family: Georgia, serif;
+}
+
+.quote-author {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.quote-author::before {
+  content: '— ';
+}
+
+.quote-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .quote {
+    padding: 24px 16px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .quote-text::before {
+    left: -20px;
+    font-size: 48px;
+  }
+
+  .quote-text::after {
+    font-size: 48px;
+  }
+
+  .quote-author {
+    font-size: 16px;
+  }
+
+  .quote-image {
+    width: 60px;
+    height: 60px;
+  }
+}

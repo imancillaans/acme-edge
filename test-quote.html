@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Block Test</title>
+  <link rel="stylesheet" href="blocks/quote/quote.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quote Block Examples</h1>
+
+  <!-- Example 1: Quote with author and image -->
+  <div class="quote block" data-block-name="quote">
+    <div>
+      <div>El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito.</div>
+    </div>
+    <div>
+      <div>Albert Schweitzer</div>
+    </div>
+    <div>
+      <div><img src="https://via.placeholder.com/200" alt="Albert Schweitzer"></div>
+    </div>
+  </div>
+
+  <!-- Example 2: Quote with only author -->
+  <div class="quote block" data-block-name="quote">
+    <div>
+      <div>La vida es lo que pasa mientras estás ocupado haciendo otros planes.</div>
+    </div>
+    <div>
+      <div>John Lennon</div>
+    </div>
+  </div>
+
+  <!-- Example 3: Quote only -->
+  <div class="quote block" data-block-name="quote">
+    <div>
+      <div>Sé el cambio que quieres ver en el mundo.</div>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import and run the quote block decorator
+    import decorate from './blocks/quote/quote.js';
+
+    // Find all quote blocks and decorate them
+    document.querySelectorAll('.quote').forEach((block) => {
+      decorate(block);
+    });
+  </script>
+</body>
+</html>
