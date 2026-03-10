@@ -1,10 +1,8 @@
 {
   "mappings": [
-    "/content/edgeacme/:/",
-    "/content/edgeacme/configuration:/.helix/config.json",
-    "/content/edgeacme/metadata:/metadata.json"
+    "/content/gyto/:/"
   ],
   "includes": [
-    "/content/edgeacme/"
+    "/content/gyto/"
   ]
 }

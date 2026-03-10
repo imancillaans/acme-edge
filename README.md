@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# ACME Edge Delivery Project
+AEM Edge Delivery Services project for GYTO content.
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--acme-edge--imancillaans.aem.page/
+- Live: https://main--acme-edge--imancillaans.aem.live/
 
 ## Documentation
 
