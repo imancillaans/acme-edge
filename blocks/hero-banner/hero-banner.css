@@ -1,0 +1,130 @@
+/* Hero Banner Block */
+
+.hero-banner-container {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-banner {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Background Image */
+.hero-banner-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-banner-background picture,
+.hero-banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Content Container */
+.hero-banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 60px 24px;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.hero-banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 24px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtitle */
+.hero-banner-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 300;
+}
+
+/* CTA Button */
+.hero-banner-cta {
+  margin-top: 32px;
+}
+
+.hero-banner-button {
+  display: inline-block;
+  padding: 16px 48px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background: #ff6b6b;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.hero-banner-button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: 400px;
+  }
+
+  .hero-banner-content {
+    padding: 40px 20px;
+  }
+
+  .hero-banner-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .hero-banner-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-banner-button {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-banner {
+    min-height: 600px;
+  }
+
+  .hero-banner-title {
+    font-size: 56px;
+  }
+
+  .hero-banner-subtitle {
+    font-size: 22px;
+  }
+}

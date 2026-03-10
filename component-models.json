@@ -103,6 +103,38 @@
     ]
   },
   {
+    "id": "about-section",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "required": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "cta",
+        "label": "Call to Action (optional)"
+      }
+    ]
+  },
+  {
     "id": "acc-button",
     "fields": [
       {
@@ -329,12 +361,55 @@
     ]
   },
   {
+    "id": "contact-form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Form Title",
+        "value": "Get in Touch"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "hero-banner",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "backgroundImage",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "cta",
+        "label": "Call to Action Button"
       }
     ]
   },
@@ -413,6 +488,32 @@
         "valueType": "string",
         "name": "image",
         "label": "Author Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "service-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Service Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Service Description",
+        "required": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon (optional)",
         "multi": false
       }
     ]

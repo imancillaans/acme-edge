@@ -19,7 +19,11 @@
       "cards",
       "columns",
       "fragment",
-      "quote"
+      "quote",
+      "hero-banner",
+      "about-section",
+      "services-grid",
+      "contact-form"
     ]
   },
   {
@@ -50,6 +54,12 @@
     "id": "promotion",
     "components": [
       "acc-button"
+    ]
+  },
+  {
+    "id": "services",
+    "components": [
+      "service-item"
     ]
   }
 ]

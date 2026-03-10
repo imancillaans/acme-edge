@@ -54,7 +54,11 @@
         "cards",
         "columns",
         "fragment",
-        "quote"
+        "quote",
+        "hero-banner",
+        "about-section",
+        "services-grid",
+        "contact-form"
       ]
     }
   ]
